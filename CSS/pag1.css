@@ -1,0 +1,131 @@
+@font-face {
+    font-family: FonteFina;
+    src: url(../Fonte/Barlow-ThinItalic.ttf);
+}
+
+header{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    background-color: rgb(184, 199, 199);
+}
+
+.banner-fundo{
+    background-image: url(../imagens/imagem-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+    background-attachment: fixed;
+}
+
+#titulo{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    background-color:  #b29867;
+    color: #fff;
+    text-align: center;
+    font-family: FonteFina ; 
+    text-shadow: 0.1em 0.1em 0.2em black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-list a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.imagem-principal{
+    max-width: 180px;
+    max-height: 180px;
+    margin: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b29867;
+    height: 8vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+ul a:hover ::after{
+    width: 100%;
+}
+
+.container{
+   display: block;
+   background-color: rgb(184, 199, 199);
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+.container-cartao{
+    background-color: #1c99c3;
+    min-height: 40px;
+    padding: 30px 40px;
+    width: auto;
+    margin:  30px 16px 30px;
+    
+}
+
+.imagem{
+    border: 0;
+    padding-bottom: .25em;
+}
+
+.imagem h3{
+    
+    padding-bottom: .25em;
+    color: #fff;
+}
+
+.imagem-personagem img{
+    margin: 0 3vw 3vw 0;
+    margin: 0;
+    margin-right: 2em;
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: fill;
+}
+
+
+
+
+
