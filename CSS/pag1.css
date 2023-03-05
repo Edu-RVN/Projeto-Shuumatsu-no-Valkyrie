@@ -5,31 +5,15 @@
 
 header{
     position: fixed;
-    height: 100%;
     width: 100%;
 }
 
-main{
-    background-color: rgb(184, 199, 199);
-}
-
-.banner-fundo{
-    background-image: url(../imagens/imagem-fundo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 92vh;
-    background-attachment: fixed;
-}
-
-#titulo{
-    margin: 0;
-    padding: 0;
-    padding-bottom: 8px;
-    background-color:  #b29867;
-    color: #fff;
-    text-align: center;
-    font-family: FonteFina ; 
-    text-shadow: 0.1em 0.1em 0.2em black;
+.nave{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8ab76;
+    height: 8vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -39,28 +23,8 @@ main{
     transition: 0.3s;
 }
 
-a:hover{
+.nav-list a:hover{
     opacity: 0.7;
-}
-
-.logo{
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-.imagem-principal{
-    max-width: 180px;
-    max-height: 180px;
-    margin: 20px;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #b29867;
-    height: 8vh;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .nav-list{
@@ -89,41 +53,146 @@ ul a:hover ::after{
     width: 100%;
 }
 
+.trocar-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.trocar-layout a{
+    padding: 10px 15px 10px 15px;
+    color:#E4F7F7;
+    text-shadow:0.1em 0.1em 0.2em black;;
+    font-size: 40px;
+    transition: 0.3s;
+    text-decoration: none;
+   
+}
+
+
+.trocar-layout a:hover{
+    color: rgb(246, 218, 195);
+    transition: 0.3s;
+    opacity: 0.7;
+} 
+
+main{
+    background-color: #b8c7c7;
+}
+
+.banner-fundo{
+    background-image: url(../imagens/imagem-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+    background-attachment: fixed;
+}
+
+#titulo{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    background-color:  #c8ab76;
+    color: #fff;
+    text-align: center;
+    font-family: FonteFina ; 
+    text-shadow: 0.1em 0.1em 0.2em black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.imagem-principal{
+    max-width: 180px;
+    margin: 20px;
+}
+
 .container{
-   display: block;
-   background-color: rgb(184, 199, 199);
-   padding-left: 60px;
-   padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(184, 199, 199);
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 20px;
+    
 }
 
 .container-cartao{
-    background-color: #1c99c3;
-    min-height: 40px;
-    padding: 30px 40px;
-    width: auto;
-    margin:  30px 16px 30px;
-    
+    background-color: #fff4e057;
+    border: solid 2px  #b29867 ;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    height: 300px;
+    width: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+ a{
+    text-decoration: none;
+    opacity: 1;
+}
+
+.personagem{
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.personagem:hover{
+    transform: scale(1.15, 1.15);
 }
 
 .imagem{
-    border: 0;
-    padding-bottom: .25em;
+    padding: 20px 30px 40px 30px;
 }
+
+.imagem-logo{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+} 
 
 .imagem h3{
-    
-    padding-bottom: .25em;
-    color: #fff;
+    text-align: center;
+    color: #ffde9f;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-family:FonteFina;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 
-.imagem-personagem img{
-    margin: 0 3vw 3vw 0;
-    margin: 0;
-    margin-right: 2em;
-    max-height: 300px;
-    max-width: 300px;
-    object-fit: fill;
+footer{
+    background-color: #b29867;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 17px;
 }
+
+footer strong{
+    color: #efdbb5;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
