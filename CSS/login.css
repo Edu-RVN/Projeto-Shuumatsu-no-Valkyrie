@@ -1,0 +1,140 @@
+@font-face {
+    font-family: FonteLight;
+    src: url(../Fonte/Barlow-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: FonteLight;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.nave{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(to right,#c8ab76, #e7cc9a ) ;
+    height: 8vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.imagem-principal{
+    max-width: 180px;
+    margin: 20px;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: whitesmoke;
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+form{
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+}
+
+.buttonsForm{
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.buttonsForm button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+}
+
+.bntColor{
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(to right, #c8ab76, #c6963f);
+    border-radius: 30px;
+    transition: .3s;
+}
+
+input[type="text"], input[type="password"]{
+    border: none;
+    margin-top: 40px;
+    border-radius: 40px;
+    padding: 8px 0px 8px 35px;
+    outline: none;
+    width: 100%;
+}
+
+button[type="submit"]{
+    background:linear-gradient(to left,  #c6963f, #c8ab76);
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0px 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.divCheck{
+    margin: 20px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+}
+
+#signin{
+    left: 25px;
+}
+
+#signup{
+    left: 450px;
+}
+
+i{
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+}
+
+.iEmail{
+    top: 39px;
+}
+
+.iPassword{
+    top: 110px;
+}
+
+.iPassword2{
+    top: 180px;
+}

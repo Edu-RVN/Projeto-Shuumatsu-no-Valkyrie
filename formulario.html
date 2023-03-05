@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/login.css">
+    <script src="https://kit.fontawesome.com/80a95ce8fb.js" crossorigin="anonymous"></script>
+    <title>login</title>
+</head>
+<body>
+    <header>
+        <nav class="nave" >
+            <img class="imagem-principal" src="imagens/logo.png" alt="">
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="buttonsForm">
+                <div class="bntColor"></div>
+                <button id="bntSignin">Entrar</button>
+                <button id="bntSignup">Cadastrar</button>
+            </div>
+            <form id="signin">
+                <input type="text" placeholder="E-mail" required />
+                <i class="fa-solid fa-envelope iEmail"></i>
+                <input type="password" placeholder="Senha" required />
+                <i class="fa-solid fa-lock iPassword"></i>
+                <div class="divCheck">
+                    <input type="checkbox" />
+                    <span>Lembrar palavra-passe</span>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+            <form id="signup">
+                <input type="text" placeholder="E-mail" required />
+                <i class="fa-solid fa-envelope iEmail"></i>
+                <input type="password" placeholder="Senha" required />
+                <i class="fa-solid fa-lock iPassword"></i>
+                <input type="password" placeholder="Senha" required />
+                <i class="fa-solid fa-lock iPassword2"></i>
+                <div class="divCheck">
+                    <input type="checkbox" />
+                    <span>Termos</span>
+                </div>
+                <button type="submit">Registrar-se</button>
+            </form>
+        </div>
+    </main>
+
+        
+
+
+    <script src="JS/login.js"></script>
+</body>
+</html>
