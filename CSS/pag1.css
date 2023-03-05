@@ -6,6 +6,7 @@
 header{
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .nave{
@@ -70,7 +71,6 @@ ul a:hover ::after{
     text-decoration: none;
    
 }
-
 
 .trocar-layout a:hover{
     color: rgb(246, 218, 195);
@@ -184,17 +184,15 @@ footer strong{
     color: #efdbb5;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+    color: transparent;
+}
 
+::-webkit-scrollbar-thumb{
+    background-color:#a99d8a;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+::-webkit-scrollbar-thumb:hover{
+    background-color: #efdab8;
+}
