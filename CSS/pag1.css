@@ -137,7 +137,7 @@ main{
     padding-left: 90px;
     padding-right: 90px;
     padding-top: 20px;
-    
+    transition: opacity 1s ease-in-out;
 }
 
 .container-cartao{

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/80a95ce8fb.js" crossorigin="anonymous"></script>
-    <title>login</title>
+    <title>Login</title>
 </head>
 <body>
     <header>
@@ -17,13 +18,16 @@
     </header>
     
     <main>
+        <div> <section class="banner-fundo"></section> </div>
         <div class="container">
-            <div class="buttonsForm">
+
+            <div class="buttonsForm" data-aos="fade-left">
                 <div class="bntColor"></div>
                 <button id="bntSignin">Entrar</button>
                 <button id="bntSignup">Cadastrar</button>
             </div>
-            <form id="signin">
+
+            <form id="signin" data-aos="fade-left">
                 <input type="text" placeholder="E-mail" required />
                 <i class="fa-solid fa-envelope iEmail"></i>
                 <input type="password" placeholder="Senha" required />
@@ -34,7 +38,8 @@
                 </div>
                 <button type="submit">Entrar</button>
             </form>
-            <form id="signup">
+
+            <form id="signup" data-aos="fade-left">
                 <input type="text" placeholder="E-mail" required />
                 <i class="fa-solid fa-envelope iEmail"></i>
                 <input type="password" placeholder="Senha" required />
@@ -47,12 +52,18 @@
                 </div>
                 <button type="submit">Registrar-se</button>
             </form>
+
         </div>
     </main>
 
         
 
 
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="JS/login.js"></script>
 </body>
 </html>
