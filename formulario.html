@@ -28,15 +28,15 @@
             </div>
 
             <form id="signin" data-aos="fade-left">
-                <input type="text" placeholder="E-mail" required />
+                <input id="login" type="text" placeholder="E-mail" required />
                 <i class="fa-solid fa-envelope iEmail"></i>
-                <input type="password" placeholder="Senha" required />
+                <input id="senha" type="password" placeholder="Senha" required />
                 <i class="fa-solid fa-lock iPassword"></i>
                 <div class="divCheck">
                     <input type="checkbox" />
                     <span>Lembrar palavra-passe</span>
                 </div>
-                <button type="submit">Entrar</button>
+                <button type="submit" onclick="logar(); return false" >Entrar</button>
             </form>
 
             <form id="signup" data-aos="fade-left">
